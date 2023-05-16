@@ -1,0 +1,13 @@
+footer{
+    background-color: #483D8B;
+}
+
+footer a{
+    color: dodgerblue;
+    filter: brightness(125%);
+    text-decoration: none;
+    transition: 0.5s;
+}
+footer a:hover{
+    filter: brightness(150%);
+}

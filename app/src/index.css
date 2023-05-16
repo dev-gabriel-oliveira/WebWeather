@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Urbanist:wght@300;600;900&display=swap');
+
+html{
+  font-size: calc(12px + 0.390625vw);
+}
+body {
+  display: grid;
+
+  background-color:#9280D7;
+  
+  margin: 0;
+
+  font-family: 'Urbanist', sans-serif;
+  text-align: center;
+  color: white;
+}
+.main a{
+  color: dodgerblue;
+  filter: brightness(80%);
+  text-decoration: none;
+  transition: 0.5s;
+}
+.main a:hover{
+  filter: brightness(100%);
+}
+
+button{
+  transition: 0.5s !important;
+}
+
+
+/* ===== Scrollbar CSS ===== */
+  /* Firefox */
+  * {
+    scrollbar-width: none;
+    scrollbar-color: orange rgb(0, 0, 0);
+  }
+
+  /* Chrome, Edge, and Safari */
+  *::-webkit-scrollbar {
+    width: 8px;
+  }
+
+  *::-webkit-scrollbar-track {
+    background: rgb(0, 0, 0);
+  }
+
+  *::-webkit-scrollbar-thumb {
+    background-color: orange;
+    border-radius: 8px;
+  }
