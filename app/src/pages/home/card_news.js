@@ -1,7 +1,7 @@
-import React, { useEffect,  } from "react";
+import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
 
-//import axios from "axios";
+import axios from "axios";
 
 import { Button, Card, CardBody, CardHeader, ListGroup, ListGroupItem } from "reactstrap";
 
@@ -9,18 +9,26 @@ export default function CardNews() {
     //const [news, setNews] = useState('');
 
     useEffect(() => {
-        navigator.geolocation.getCurrentPosition((pos) => {
-            /*const lat = pos.coords.latitude;
-            const lon = pos.coords.longitude;
-
-            /*axios.get(`https://nominatim.openstreetmap.org/reverse?lat=${lat}&lon=${lon}&format=jsonv2`)
-            .then((res) => {
-                console.log(`${res.data.address.city}-${res.data.address.state}`);
-            })
-            .catch(err => {
-                console.error(err);
-            });*/
+        /*axios.get(`https://servicodados.ibge.gov.br/api/v3/noticias/?busca=clima`)
+        .then((res) => {
+            console.log(res);
+        })
+        .catch(err => {
+            console.error(err);
         });
+        axios.get(`https://www.google.com/search?q=teresina+piaui+clima`, {
+            headers: {
+                'Access-Control-Allow-Origin': '*',
+                'Access-Control-Allow-Methods': 'GET',
+                'Access-Control-Allow-Headers': 'Content-Type'
+            }
+        })
+        .then((res) => {
+            console.log(res);
+        })
+        .catch(err => {
+            console.error(err);
+        });*/
     },[]);
 
     return(

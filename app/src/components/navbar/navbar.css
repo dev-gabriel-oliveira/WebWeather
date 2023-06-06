@@ -1,3 +1,10 @@
 nav{
     background-color: #000A4E;
 }
+
+nav a{
+    transition: 0.5s;
+}
+nav a:hover{
+    color: gold !important;
+}
